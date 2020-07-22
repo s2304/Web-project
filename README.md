@@ -1,2 +1,2 @@
 # Web-project
-This is about web application project
+All web application related things here
