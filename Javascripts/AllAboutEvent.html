@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> Inline Event</title>
+    </head>
+    <body>
+        <!-- this is the function call -->
+        <button id="firstBtn" onclick="OnClick()"> click me</button>
+
+          <!-- this is the inine function call -->
+        <button id="secondBtn">Click Me Again</button>
+        <script>
+            function OnClick() {
+                console.log("You have clicked me");
+                alert("Here is you alert");
+            }
+            
+            var firstBtn = document.getElementById("firstBtn");
+            firstBtn.OnClick = () => {
+                alert("Hi from linline property");
+            };
+
+            var firstBtn = document.getElementById("firstBtn");
+            firstBtn.OnClick = () => {
+                alert("Hi from linline property");
+            };
+
+            var secondBtn = document.getElementById("secondBtn");
+            // secondBtn.addEventListener("click", function() {
+            //     alert("this is from add event listener")
+            // });
+
+            const OnClickedSecondBtn = () =>
+            {
+                alert("this is from delegate");
+            }
+
+            // secondBtn.addEventListener("click", OnClickedSecondBtn);
+
+            secondBtn.addEventListener("click", () =>
+            {
+                alert("this is from delegate");
+            });
+
+            // function OnClickedSecondBtn()
+            // {
+            //     alert("this is from delegate");
+            // }
+
+         
+            
+        </script>
+    </body>
+</html>

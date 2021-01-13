@@ -1,0 +1,44 @@
+body{
+    background : #eee
+}
+
+#Content
+{
+    width:400px; 
+    background: #ffffff;
+    min-height: 100px;
+    height:200px;
+    overflow: hidden;
+    margin: auto;
+    padding:10px;
+    transition: height 0.9s;
+}
+
+#transitionBtn
+{
+   vertical-align: middle;
+}
+
+/* #circle
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;   
+    user-select: none; 
+    transition: background-color 0.8;
+    margin: 5px;
+    position: relative;
+    transition: height 0.7s;
+} */
+
+#circle:hover
+{
+    cursor: pointer;
+}
+
+#circleContainer
+{
+    display:flex;
+    height: 500px;
+}
